@@ -255,8 +255,18 @@ function TimerPlugin.setup(opts)
 		TimerPlugin.duration_options = opts.options
 	end
 
-	local menu_key = opts.open_keymap or opts.keymap or "<leader>tt"
-	local remaining_key = opts.remaining_keymap or "<leader>tr"
+	local menu_key = opts.open_keymap
+	if menu_key == nil then
+		menu_key = opts.keymap
+	end
+	if menu_key == nil then
+		menu_key = "<leader>tt"
+	end
+
+	local remaining_key = opts.remaining_keymap
+	if remaining_key == nil then
+		remaining_key = "<leader>tr"
+	end
 
 	vim.api.nvim_create_user_command("TimerPick", TimerPlugin.pick_and_start, {})
 	vim.api.nvim_create_user_command("TimerRemaining", TimerPlugin.showRemainingTime, {})

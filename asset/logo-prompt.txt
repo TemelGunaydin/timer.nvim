@@ -1,0 +1,11 @@
+Generator: built-in image_gen (imagegen skill)
+Output: logo.png, transparent background
+
+Use case: logo-brand
+Asset type: repository logo for timer.nvim, a minimal Neovim timer plugin
+Primary request: Create one polished, distinctive logo symbol combining a countdown timer and a terminal prompt. A bold open circular stopwatch outline, with a simple terminal chevron and small cursor block inside, balanced as one cohesive mark.
+Style/medium: crisp, flat, vector-like geometry; consistent substantial stroke weight; restrained professional open-source software identity
+Composition/framing: square canvas; a single centered symbol; generous even clear space; readable when displayed at 128 pixels
+Color palette: fresh Neovim-inspired green with a subtle darker green secondary face, strong contrast on both light and dark backgrounds
+Text: none
+Constraints: genuinely transparent background; clean edges; no lettering, no gradients, no shadows, no mockup, no texture, no extra objects, no watermark
